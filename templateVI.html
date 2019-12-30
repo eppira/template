@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.blubbr.tv/wp-content/uploads/2018/10/mountains-1412683.png");
+            height: 1400px;
+            width: 100%;
+            display: inline-block;
+        }
+        .logo{
+            font-size: 23px;
+            color: #f2f2f2;
+            border: 5px solid #f2f2f2;
+            padding: 14px 9px;
+            float: left;
+            font-family: "Agency FB";
+            margin-left: 171px;
+            margin-top: 34px;
+            cursor: pointer;
+        }
+        .menu{
+            font-size: 21px;
+            color: #f2f2f2;
+            float: right;
+            font-family: "Agency FB";
+            margin-right: 171px;
+            margin-top: 56px;
+            cursor: pointer;
+        }
+        .menu ul li{
+            display: inline-block;
+            margin-right: 27px;
+            margin-left: 27px;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .main{
+            text-align: center;
+            font-size: 90px;
+            font-family: "Agency FB";
+            margin-top: 160px;
+            color: #f2f2f2;
+        }
+        .text{
+            font-size: 27px;
+            margin-top: 25px;
+        }
+        .text2{
+            font-size: 45px;
+            font-family: "Agency FB";
+            color: #333333;
+            margin-top: 120px;
+            margin-bottom: 90px;
+        }
+        .word{
+            color: #96696c;
+        }
+        .button{
+            font-size: 21px;
+            padding: 27px 47px;
+            border: none;
+            border-radius: 25%;
+            text-decoration: none;
+            color: #f2f2f2;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 438px;
+            text-align: center;
+            margin-top: 384px;
+            font-size: 27px;
+            font-family: "Agency FB";
+            color: #f2f2f2;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .fa-laptop{
+            font-size: 87px;
+            color: #f2f2f2;
+            margin-top: 45px;
+        }
+        h3{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .content{
+            height: 700px;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+        }
+        .accordion {
+            background-color: #746061;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 65%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 27px;
+            font-family: "Agency FB";
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            display: inline-block;
+            width: 65%;
+            text-align: center;
+            padding: 0 18px;
+            background-color: white;
+            color: #333333;
+            font-size: 27px;
+            font-family: "Agency FB";
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .footer{
+            font-size: 27px;
+            font-family: "Agency FB";
+            color: #f2f2f2;
+            background-color: #746061;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="clearfix">
+            <div class="logo">
+                <h1>WEBSITE</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>HOME</li>
+                    <li>PAGES</li>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>OUR WORKS</li>
+                    <li>SKILLS</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h3>LOREM <span class="word">IPSUM</span></h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="button">GET STARTED</a>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color: rgba(0, 0, 0, 0.3)">
+                <i class="fa fa-laptop"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="column" style="background-color: rgba(0, 0, 0, 0.5)">
+                <i class="fa fa-laptop"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="column" style="background-color: rgba(0, 0, 0, 0.3)">
+                <i class="fa fa-laptop"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="column" style="background-color: rgba(0, 0, 0, 0.5)">
+                <i class="fa fa-laptop"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <h3 class="text2">LOREM <span class="word">IPSUM</span></h3>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>&copy 2019</p>
+    </div>
+</div>
+</body>
+</html>

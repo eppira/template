@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+        }
+        .header {
+            height: 70px;
+            width: 100%;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .header .menu{
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 100%;
+        }
+        #logo{
+            color: white;
+            float: left;
+            font-size: 45px;
+            margin-top: 16px;
+            margin-left: 70px;
+        }
+        .mainmenu{
+            color: white;
+            float: left;
+            font-size: 25px;
+            font-family: "Agency FB";
+            margin-top: 30px;
+            margin-left: 100px;
+            cursor: pointer;
+        }
+        .menu ul li {
+            display: inline-block;
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+        .menu::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .register{
+            float: right;
+            font-family: "Agency FB";
+            font-size: 16px;
+            color: white;
+            margin-top: 25px;
+            margin-right: 100px;
+        }
+        .register .button{
+            padding: 5px 12px;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+        }
+        #soc .fa{
+            padding: 10px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 20px;
+        }
+        .fa:hover{
+            opacity: 0.7%;
+        }
+        .fa-facebook{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .fa-twitter{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .fa-instagram{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .fa-youtube{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .fa-tumblr{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .content{
+            height: 1130px;
+            width: 100%;
+        }
+        .content .container .img{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.architecturaldigest.com/photos/598dd880cb4a1b70eb61ac1e/16:9/w_2560,c_limit/Entrance-Atrium-with-plant.jpg");
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        .content .container .button{
+            border: 1px solid white;
+            outline: none;
+            padding: 23px 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-family: "Agency FB";
+            margin-top: 180px;
+            display: inline-block;
+        }
+        .image{
+            float: left;
+            margin-left: 140px;
+            margin-top: 30px;
+        }
+        .content .container h1{
+            font-size: 45px;
+            margin-right: 900px;
+            margin-top: 120px;
+        }
+        .content .container p{
+            margin-top: 90px;
+            margin-right: 45px;
+        }
+        .lorem {
+            font-family: "Agency FB";
+            font-size: 25px;
+            float: right;
+        }
+        .info::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer .container{
+            height: 45px;
+            width: 100%;
+            background-color: grey;
+            color: white;
+            line-height: 45px;
+            font-size: 18px;
+            font-family: "Agency FB";
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="menu">
+            <div id="logo">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+            </div>
+            <div class="mainmenu">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="register">
+                Email address: <input type="text" name="email">
+                Password: <input type="password" name="passwordk" minlength="6" maxlength="12">
+                <input class="button" type="submit" name="submit" value="Log In">
+                <a href="https://www.facebook.com" id="soc" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                <a href="https://www.tumblr.com" class="fa fa-tumblr"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="img">
+            <a class="button" href="#">READ ABOUT US</a>
+        </div>
+        <div class="info">
+            <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaJLWwnSxNTMDLvVobh-5wmabEJvWiQNGDhmf6rGT3WvvXVhQy" alt="img" height="450px" width="450px">
+            <h1 class="lorem">Lorem Ipsum</h1>
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Duis condimentum nulla a semper fringilla.<br> Pellentesque turpis purus, luctus vitae congue at, ullamcorper eu libero. Sed sed turpis imperdiet, varius<br> lectus ac, ultrices velit. Maecenas in purus vel neque consectetur vehicula nec in turpis. Vestibulum hendrerit sagittis velit eget dapibus.<br>Aliquam et lacinia nulla. Nulla dignissim libero enim, quis luctus sem lacinia sed. Fusce interdum libero quis turpis posuere egestas.</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>&#9400 2019</p>
+    </div>
+</div>
+</body>
+</html>

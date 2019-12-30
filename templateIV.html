@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Agency FB";
+        }
+        .header{
+            height: 160px;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .info{
+            background-color: #fcfafa;
+            color: #333;
+            height: 45px;
+        }
+        .info::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .first{
+            float: left;
+            margin-left: 90px;
+            line-height: 45px;
+            font-size: 18px;
+            word-spacing: 10px;
+        }
+        .second {
+            float: right;
+            margin-right: 90px;
+            line-height: 45px;
+            font-size: 18px;
+            word-spacing: 10px;
+        }
+        .first .fa{
+            color: #333;
+            text-decoration: none;
+        }
+        .second .fa{
+            text-decoration: none;
+            color: #333;
+        }
+        .logo{
+            float: left;
+            color: #094276;
+            font-size: 25px;
+            font-family: "Agency FB";
+            line-height: 115px;
+            margin-left: 140px;
+            cursor: pointer;
+        }
+        .menu ul{
+            float: right;
+            margin-right: 90px;
+        }
+        .menu .active{
+            color: #094276;
+        }
+        .menu ul li{
+            display: inline-block;
+            margin-left: 16px;
+            color: #333;
+            font-size: 25px;
+            font-family: "Agency FB";
+            line-height: 115px;
+            cursor: pointer;
+        }
+        .mainmenu::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .content{
+            height: 1600px;
+        }
+        .img{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Nature/H-P/Habitats/Ocean/wave.ngsversion.1500050062134.adapt.1900.1.jpg");
+            height: 700px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            display: inline-block;
+        }
+        .img h1{
+            font-size: 45px;
+            margin-top: 135px;
+            margin-bottom: 70px;
+        }
+        .img{
+            font-size: 30px;
+            color: #ffffff;
+        }
+        .button{
+            border: none;
+            padding: 30px 65px;
+            color: #ffffff;
+            font-size: 25px;
+            font-family: "Agency FB";
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.4);
+            margin-top: 70px;
+            display: inline-block;
+        }
+        .mail{
+            background-color: #ffffff;
+            width: 395px;
+            height: 520px;
+            -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            text-align: center;
+        }
+        .gallery{
+            background-color: #ffffff;
+            width: 395px;
+            height: 520px;
+            -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            text-align: center;
+        }
+        .contact{
+            background-color: #ffffff;
+            width: 395px;
+            height: 520px;
+            -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            text-align: center;
+        }
+        #famail{
+            font-size: 65px;
+            margin-top: 65px;
+            margin-bottom: 45px;
+        }
+        #fagallery{
+            font-size: 65px;
+            margin-top: 65px;
+            margin-bottom: 45px;
+        }
+        #facontact{
+            font-size: 65px;
+            margin-top: 65px;
+            margin-bottom: 45px;
+        }
+        h2{
+            font-family: "Agency FB";
+            font-size: 25px;
+            margin-bottom: 45px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .column{
+            margin-top: 90px;
+            margin-left: 83px;
+            float: left;
+            padding: 45px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color: #fcfafa;
+            height: 45px;
+            width: 100%;
+            text-align: center;
+            line-height: 45px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="info">
+            <div class="first">
+                <p><i class="fa fa-envelope-open-o"></i> info@yourdomain.com <i class="fa fa-phone"></i> 9(745)45568</p>
+            </div>
+            <div class="second">
+                <p><a href="https://www.facebook.com/" class="fa fa-facebook"></a> Facebook <a href="https://www.twitter.com/"> <i class="fa fa-twitter"></i></a> Twitter</p>
+            </div>
+        </div>
+        <div class="mainmenu">
+        <div class="logo">
+            <h1>Website</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="active">Home</li>
+                <li>Services</li>
+                <li>About Us</li>
+                <li>Why Us</li>
+                <li>Blog</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="img">
+            <h1>LOREM IPSUM</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="button" href="#">READ MORE</a>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="mail">
+                    <i id="famail" class="fa fa-envelope"></i>
+                    <h2>LOREM IPSUM</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="gallery">
+                    <i id="fagallery" class="fa fa-play"></i>
+                    <h2>LOREM IPSUM</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="contact">
+                    <i id="facontact" class="fa fa-address-book"></i>
+                    <h2>LOREM IPSUM</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>&#169 2019</p>
+    </div>
+</div>
+</body>
+</html>
